@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+
+
+<!-- <script type="module" src="module1.js"></script> -->
+
+<script type="module">
+// demo1
+
+// import {userName,userAge,Cat,test} from './module1.js'
+// console.log(userName);
+// console.log(userAge);
+
+// var cat1 = new Cat();
+// console.log(cat1.name);
+
+// test();
+
+
+
+// demo2
+// import {test1,test2,test3} from './module1.js'
+// test1();
+// test2();
+// test3();
+
+
+
+// demo4
+// import {abc,obj} from './module1.js'
+// abc = 789;报错
+// var abc = 2000;报错
+// console.log(abc);
+
+// obj.name = 'xw';//对象属性可以修改
+// console.log(obj.name);//'xm'
+
+
+// setTimeout(function () {
+//     console.log(abc);
+// },2000)
+
+// console.log(my);//my is not defined
+
+
+
+// demo5
+// myObj.fn();
+// import {obj as myObj} from './module1.js'//提升机制
+
+// import * as myObj from './module1.js'
+// console.log(myObj.a1);
+// console.log(myObj.a2);
+// myObj.obj.fn();
+
+
+
+
+// demo6
+import module1,{a1,a2,obj} from './module1.js'
+console.log(module1);//123
+console.log(a2);
+
+
+</script>
+</body>
+</html>
